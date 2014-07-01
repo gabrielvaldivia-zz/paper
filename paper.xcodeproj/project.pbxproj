@@ -11,6 +11,8 @@
 		4057090B195F6A80003EF9FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4057090A195F6A80003EF9FA /* AppDelegate.m */; };
 		4057090D195F6A80003EF9FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4057090C195F6A80003EF9FA /* Images.xcassets */; };
 		40570919195F6A80003EF9FA /* paperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40570918195F6A80003EF9FA /* paperTests.m */; };
+		40570929195F70C9003EF9FA /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40570927195F70C9003EF9FA /* FeedViewController.m */; };
+		4057092A195F70C9003EF9FA /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40570928195F70C9003EF9FA /* FeedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,9 @@
 		40570912195F6A80003EF9FA /* paperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = paperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40570917195F6A80003EF9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40570918195F6A80003EF9FA /* paperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = paperTests.m; sourceTree = "<group>"; };
+		40570926195F70C9003EF9FA /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		40570927195F70C9003EF9FA /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		40570928195F70C9003EF9FA /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,10 @@
 				40570909195F6A80003EF9FA /* AppDelegate.h */,
 				4057090A195F6A80003EF9FA /* AppDelegate.m */,
 				4057090C195F6A80003EF9FA /* Images.xcassets */,
+				40570925195F6D40003EF9FA /* Views */,
+				40570926195F70C9003EF9FA /* FeedViewController.h */,
+				40570927195F70C9003EF9FA /* FeedViewController.m */,
+				40570928195F70C9003EF9FA /* FeedViewController.xib */,
 				40570905195F6A80003EF9FA /* Supporting Files */,
 			);
 			path = paper;
@@ -106,6 +115,13 @@
 				40570917195F6A80003EF9FA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40570925195F6D40003EF9FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +173,7 @@
 				TargetAttributes = {
 					40570901195F6A80003EF9FA = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 8QTN5F2ZYH;
 					};
 					40570911195F6A80003EF9FA = {
 						CreatedOnToolsVersion = 6.0;
@@ -187,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4057092A195F70C9003EF9FA /* FeedViewController.xib in Resources */,
 				4057090D195F6A80003EF9FA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4057090B195F6A80003EF9FA /* AppDelegate.m in Sources */,
+				40570929195F70C9003EF9FA /* FeedViewController.m in Sources */,
 				40570908195F6A80003EF9FA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,9 +331,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = paper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -323,9 +345,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = paper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
